@@ -12,9 +12,9 @@ name: Deploy
 
 on:
   # Uncomment to auto-deploy on push after configuring secrets:
-  # push:
-  #   branches:
-  #     - main
+  push:
+    branches:
+      - main
   workflow_dispatch:
 
 jobs:
