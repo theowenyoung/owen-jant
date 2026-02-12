@@ -16,7 +16,7 @@ port = 9019
 
 [vars]
 # Required: Your site's public URL
-SITE_URL = "http://localhost:9019"
+SITE_URL = "https://jant.owenyoung.com"
 
 # Optional: Site configuration
 # These can be overridden in dashboard settings (/dash/settings)
@@ -46,7 +46,7 @@ SITE_URL = "http://localhost:9019"
 [[d1_databases]]
 binding = "DB"
 database_name = "owen-jant-db"
-database_id = "local"
+database_id = "d83ab4f1-d82f-43dd-b8df-c3542edc431f"
 migrations_dir = "node_modules/@jant/core/src/db/migrations"
 
 [[r2_buckets]]
