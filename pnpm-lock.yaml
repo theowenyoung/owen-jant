@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@jant/core':
-        specifier: ^0.3.24
-        version: 0.3.24(@cloudflare/workers-types@4.20260212.0)(hono@4.11.9)(kysely@0.28.11)(tailwindcss@4.1.18)
+        specifier: ^0.3.25
+        version: 0.3.25(@cloudflare/workers-types@4.20260212.0)(hono@4.11.9)(kysely@0.28.11)(tailwindcss@4.1.18)
     devDependencies:
       '@cloudflare/vite-plugin':
         specifier: ^1.22.1
@@ -644,10 +644,9 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@jant/core@0.3.24':
-    resolution: {integrity: sha512-MwUK0SQ80POFk6YCN0FZaMce/nbq938Nfa2cjsJLnUyup9jHshzAhuIeThNi5QRAIO68W1bMwhLaxGX2REr5zw==}
+  '@jant/core@0.3.25':
+    resolution: {integrity: sha512-vC5KtmmyyJUX2LS9FLzECtaWOnUN1ok9E+47DLkbloWEgaLPTw4waGo/xyV87hn+qjjLCtGwKOs7N5/I9J6r7w==}
     engines: {node: '>=24.0.0'}
-    hasBin: true
     peerDependencies:
       hono: ^4.0.0
       tailwindcss: ^4.0.0
@@ -2613,7 +2612,7 @@ snapshots:
   '@img/sharp-win32-x64@0.34.5':
     optional: true
 
-  '@jant/core@0.3.24(@cloudflare/workers-types@4.20260212.0)(hono@4.11.9)(kysely@0.28.11)(tailwindcss@4.1.18)':
+  '@jant/core@0.3.25(@cloudflare/workers-types@4.20260212.0)(hono@4.11.9)(kysely@0.28.11)(tailwindcss@4.1.18)':
     dependencies:
       '@aws-sdk/client-s3': 3.989.0
       '@lingui/core': 5.9.1
