@@ -1,0 +1,62 @@
+name = "owen-jant"
+main = "index.js"
+compatibility_date = "2026-01-20"
+compatibility_flags = ["nodejs_compat"]
+
+[assets]
+directory = "./node_modules/@jant/core/dist/client"
+
+
+# ============================================
+# Environment Variables
+# ============================================
+# Non-sensitive configuration goes here in [vars]
+# Sensitive secrets (like AUTH_SECRET) should be:
+# - Local dev: .dev.vars file (not committed)
+# - Production: wrangler secret put AUTH_SECRET
+# Full details: https://github.com/jant-me/jant/blob/main/docs/configuration.md
+
+[vars]
+# Required: Your site's public URL (e.g. https://my-blog.example.com)
+# https://github.com/jant-me/jant/blob/main/docs/configuration.md#required
+SITE_URL = "https://jant.owenyoung.com"
+
+# Optional: Site configuration
+# You can also set these in the dashboard UI at /dash/settings
+# https://github.com/jant-me/jant/blob/main/docs/configuration.md#dashboard-settings
+# SITE_NAME = "My Blog"
+# SITE_DESCRIPTION = "A personal blog powered by Jant"
+# SITE_LANGUAGE = "en"
+
+# Optional: Timeline page size (default: 20)
+# PAGE_SIZE = "20"
+
+# Optional: R2 Storage (for media uploads)
+# https://github.com/jant-me/jant/blob/main/docs/configuration.md#r2-default
+# R2_PUBLIC_URL = "https://cdn.example.com"
+
+# Optional: Cloudflare Image Transformations
+# For automatic thumbnail generation and image optimization
+# https://github.com/jant-me/jant/blob/main/docs/configuration.md#image-transformations-optional
+# IMAGE_TRANSFORM_URL = "https://example.com/cdn-cgi/image"
+
+
+[[d1_databases]]
+binding = "DB"
+database_name = "owen-jant-db"
+database_id = "d83ab4f1-d82f-43dd-b8df-c3542edc431f"
+migrations_dir = "node_modules/@jant/core/src/db/migrations"
+
+[[r2_buckets]]
+binding = "R2"
+bucket_name = "owen-jant-media"
+
+# Optional: S3-compatible storage (alternative to R2)
+# Set STORAGE_DRIVER = "s3" and configure the options below.
+# When using S3, the [[r2_buckets]] section can be removed.
+# https://github.com/jant-me/jant/blob/main/docs/configuration.md#s3-compatible-storage
+# STORAGE_DRIVER = "s3"
+# S3_ENDPOINT = "https://s3.example.com"
+# S3_BUCKET = "my-bucket"
+# S3_REGION = "us-east-1"
+# S3_PUBLIC_URL = "https://cdn.example.com"
