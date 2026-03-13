@@ -44,7 +44,7 @@ SITE_URL = "https://jant.owenyoung.com"
 [[d1_databases]]
 binding = "DB"
 database_name = "owen-jant-db"
-database_id = "d83ab4f1-d82f-43dd-b8df-c3542edc431f"
+database_id = "a31bfc0f-ea3a-4863-97de-4acb10c8ec9e"
 migrations_dir = "node_modules/@jant/core/src/db/migrations"
 
 [[r2_buckets]]

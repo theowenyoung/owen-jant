@@ -105,7 +105,7 @@ For deeper changes, fork the project and modify `@jant/core` directly.
 ## Updating
 
 ```bash
-npm update @jant/core
+npm install @jant/core@latest
 npm run deploy
 ```
 
